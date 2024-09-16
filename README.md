@@ -92,3 +92,15 @@ HEAD - служебный файл, указывающий на последни
 
 При этом статусы файлы в статусах modified и staged также находятся в tracked.
 
+
+Схема изменения состояния файлов в Git:
+
+```mermaid
+
+graph LR;
+  untracked -- "git add" --> staged;
+  staged -- "git commit" --> tracked;
+
+
+```
+
